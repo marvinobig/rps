@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
+      <div id="score">
+        <h2 id="p-score"></h2>
+        <h2 id="c-score"></h2>
+
+        <button type="button" class="rps-b">Reset</button>
+      </div>
+
       <div id="gameScreen">
         <div id="player">
-          
+          <h3 id="p-name"></h3>
           <p id="p-choice"></p>
         </div>
-        
+
         <div id="computer">
-        
+          <h3>Computer</h3>
           <p id="c-choice"></p>
         </div>
       </div>
-      
+
       <div id="controls">
-        
+        <button type="button" class="rps-b">Rock</button> 
+        <button type="button" class="rps-b">Paper</button> 
+        <button type="button" class="rps-b">Scissors</button>
       </div>
+
       <script src="index.js"></script>
+
     </main>
   </body>
 </html>
