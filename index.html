@@ -11,31 +11,34 @@
   </head>
   <body>
     <main> <!-- main UI flexbox container -->
-      <div id="score"> <!-- game score flex item-->
-        <h2 id="p-score"></h2> <!-- player score -->
-        <h2 id="c-score"></h2> <!-- computer score -->
 
-        <button type="button" class="rps-b">Reset</button> <!-- game reset button -->
-      </div>
-
-      <div id="gameScreen"> <!-- game info screen flex item / flex container -->
-        <div id="player"> <!-- player info screen flex item -->
-          <h3 id="p-name"></h3> <!-- player name -->
-          <p id="p-choice"></p> <!-- players game choice -->
+      <div id="gameContainer">
+        <div id="score"> <!-- game score flex item-->
+          <h2 id="p-score"></h2> <!-- player score -->
+          <h2 id="c-score"></h2> <!-- computer score -->
+  
+          <button type="button" class="rps-b">Reset</button> <!-- game reset button -->
         </div>
-
-        <div id="computer"> <!-- computer info flex item -->
-          <h3>Computer</h3> <!-- title for computer player -->
-          <p id="c-choice"></p> <!-- computer's game choice -->
+  
+        <div id="gameScreen"> <!-- game info screen flex item / flex container -->
+          <div id="player"> <!-- player info screen flex item -->
+            <h3 id="p-name"></h3> <!-- player name -->
+            <p id="p-choice"></p> <!-- players game choice -->
+          </div>
+  
+          <div id="computer"> <!-- computer info flex item -->
+            <h3>Computer</h3> <!-- title for computer player -->
+            <p id="c-choice"></p> <!-- computer's game choice -->
+          </div>
+        </div>
+  
+        <div id="controls"> <!-- controls for player flex item -->
+          <button type="button" class="rps-b" id="rock">Rock</button> 
+          <button type="button" class="rps-b" id="paper">Paper</button> 
+          <button type="button" class="rps-b" id="scissors">Scissors</button>
         </div>
       </div>
-
-      <div id="controls"> <!-- controls for player flex item -->
-        <button type="button" class="rps-b">Rock</button> 
-        <button type="button" class="rps-b">Paper</button> 
-        <button type="button" class="rps-b">Scissors</button>
-      </div>
-
+      
       <script src="./scripts/rps.js"></script> <!-- game script -->
 
     </main>
