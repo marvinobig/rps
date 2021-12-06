@@ -22,10 +22,18 @@ function rock() {
 
 function paper() {
     document.getElementById("p-choice").innerHTML = "Paper";
+    document.getElementById("p-img").src = "";
+    document.getElementById("p-img").alt = "";
+    cpuChoice();
+    document.getElementById("c-choice").innerHTML = cChoice;
 };
 
 function scissors() {
     document.getElementById("p-choice").innerHTML = "Scissors";
+    document.getElementById("p-img").src = "";
+    document.getElementById("p-img").alt = "";
+    cpuChoice();
+    document.getElementById("c-choice").innerHTML = cChoice;
 };
 
 function cpuChoice() {
