@@ -14,6 +14,8 @@ document.getElementById("scissors").addEventListener("click", scissors);
 
 function rock() {
     document.getElementById("p-choice").innerHTML = "Rock";
+    document.getElementById("p-img").src = "";
+    document.getElementById("p-img").alt = "";
     cpuChoice();
     document.getElementById("c-choice").innerHTML = cChoice;
 };
