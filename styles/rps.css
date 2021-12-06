@@ -1,8 +1,11 @@
-/* layout */
-body {
-    min-height: 100vh;
+* {
+    font-family: monospace, sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+/* layout */
 main {
     display: flex;
     flex-direction: column;
@@ -14,13 +17,26 @@ main {
 #gameContainer {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
+    max-height: 500px;
+    max-width: 500px;
     border: 1px solid black;
-    border-radius: 18px;
+    border-radius: 8px;
+    padding: 20px;
 }
 
+#gameScreen {
+    display: flex;
+    gap: 20px;
+    height: auto;
+}
 
-
+#player, #computer {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
