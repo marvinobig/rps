@@ -8,25 +8,25 @@ let formatedPlayerName = playerNC + playerN2;
 
 document.getElementById("p-name").innerHTML = formatedPlayerName;
 
-document.getElementById("rock").addEventListener("click", rock ());
-document.getElementById("paper").addEventListener("click", paper ());
-document.getElementById("scissors").addEventListener("click", scissors ());
+document.getElementById("rock").addEventListener("click", rock);
+document.getElementById("paper").addEventListener("click", paper);
+document.getElementById("scissors").addEventListener("click", scissors);
 
-function rock () {
+function rock() {
     document.getElementById("p-choice").innerHTML = "Rock";
-    cpuChoice ();
-    document.getElementById("c-choice").innerHTML = cChoice ();
+    cpuChoice();
+    document.getElementById("c-choice").innerHTML = cChoice;
 };
 
-function paper () {
+function paper() {
     document.getElementById("p-choice").innerHTML = "Paper";
 };
 
-function scissors () {
+function scissors() {
     document.getElementById("p-choice").innerHTML = "Scissors";
 };
 
-function cpuChoice () {
+function cpuChoice() {
 
 };
 
