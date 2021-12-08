@@ -3,6 +3,11 @@ playerName();
 function playerName() {
     // askes for players name
     let player = prompt("What is your name?");
+    
+    do{
+        player = prompt("What is your name?");
+    }while (player === null);
+    
 
     /* capitalised first letter & 
     turns remaining letters to lower case */
