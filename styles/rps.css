@@ -43,7 +43,11 @@ main {
     text-align: center;
 }
 
-#p-score, #c-score {
+.score h2 {
     display: inline;
-    text-align: center;
 }
+
+#resetContainer {
+    align-self: flex-end;
+}
+

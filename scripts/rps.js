@@ -47,11 +47,11 @@ function cpuChoice() {
   let cMove = CHOICES[Math.floor(Math.random() * CHOICES.length)];
   document.getElementById("c-choice").textContent = cMove;
 
-  playerChoice = document.getElementById("p-choice").textContent;
-  score = document.getElementById("p-score").textContent;
-  score2 = document.getElementById("c-score").textContent;
-  playerScore = parseInt(score);
-  cpuScore = parseInt(score2);
+  let playerChoice = document.getElementById("p-choice").textContent;
+  let pScore = document.getElementById("p-score").textContent;
+  let cScore = document.getElementById("c-score").textContent;
+  let playerScore = parseInt(pScore);
+  let cpuScore = parseInt(cScore);
 
   //score tracker
   if (playerChoice === "Rock" && cMove === "Scissors") {
@@ -66,5 +66,9 @@ function cpuChoice() {
     document.getElementById("p-score").textContent = ++playerScore;
   } else if (playerChoice === "Paper" && cMove === "Scissors") {
     document.getElementById("c-score").textContent = ++cpuScore;
-  }
-}
+  };
+};
+
+function reset() {
+
+};
