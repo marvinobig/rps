@@ -1,20 +1,24 @@
-// askes for players name
-let player = prompt("What is your name?");
+playerName();
 
-/* capitalised first letter & 
-turns remaining letters to lower case */
-let playerN = player.slice(0, 1).toUpperCase();
-let playerN1 = player.substr(1).toLowerCase();
+function playerName() {
+    // askes for players name
+    let player = prompt("What is your name?");
 
-/* combines capitalised first letter 
-and remaining lower case letters */
-let formatedPlayerName = playerN + playerN1;
+    /* capitalised first letter & 
+    turns remaining letters to lower case */
+    let playerN = player.slice(0, 1).toUpperCase();
+    let playerN1 = player.substr(1).toLowerCase();
 
-document.getElementById("p-name").textContent = formatedPlayerName;
+    /* combines capitalised first letter 
+    and remaining lower case letters */
+    let formatedPlayerName = playerN + playerN1;
 
-if (player === "") {
-  document.getElementById("p-name").textContent = "Unknown";
-}
+    document.getElementById("p-name").textContent = formatedPlayerName;
+
+    if (player === "") {
+    document.getElementById("p-name").textContent = "Unknown";
+    };
+};
 
 // if player chooses rock
 document.getElementById("rock").addEventListener("click", rock);
@@ -69,6 +73,16 @@ function cpuChoice() {
   };
 };
 
-function reset() {
+document.getElementById("reset-b").addEventListener("click", reset);
 
+function reset() {
+    document.getElementById("p-score").textContent = "0";
+    document.getElementById("c-score").textContent = "0";
+
+    document.getElementById("p-choice").textContent = "";
+    document.getElementById("c-choice").textContent = "";
+
+    document.getElementById("p-name").textContent = "";
+
+    return playerName();
 };
