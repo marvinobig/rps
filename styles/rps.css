@@ -5,6 +5,8 @@
 body {
     overflow: hidden;
 }
+
+
 /* layout */
 main {
     display: flex;
@@ -38,5 +40,10 @@ main {
     width: 200px;
     border: 1px solid black;
     border-radius: 8px;
+    text-align: center;
+}
+
+#p-score, #c-score {
+    display: inline;
     text-align: center;
 }
