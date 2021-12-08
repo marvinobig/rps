@@ -82,7 +82,7 @@ function reset() {
     document.getElementById("p-choice").textContent = "";
     document.getElementById("c-choice").textContent = "";
 
-    document.getElementById("p-name").textContent = "Name";
+    document.getElementById("p-name").textContent = "Human";
 
     return playerName();
 };
