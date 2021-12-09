@@ -97,6 +97,7 @@ function reset() {
 
     document.getElementById("p-choice").textContent = "";
     document.getElementById("c-choice").textContent = "";
+    document.querySelector("img").src = ""
 
     document.getElementById("p-name").textContent = "Human";
 
