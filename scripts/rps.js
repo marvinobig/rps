@@ -2,8 +2,8 @@ playerName();
 
 function playerName() {
     // askes for players name
-    let player = prompt("What is your name?");
-    
+    let player;
+
     do{
         player = prompt("What is your name?");
     }while (player === null);
