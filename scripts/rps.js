@@ -39,7 +39,7 @@ document.getElementById("paper").addEventListener("click", paper);
 
 function paper() {
   document.getElementById("p-choice").textContent = "Paper";
-  document.getElementById("p-img").src = "../Media/rock.png";
+  document.getElementById("p-img").src = "../Media/paper.png";
   return cpuChoice();
 }
 
@@ -48,7 +48,7 @@ document.getElementById("scissors").addEventListener("click", scissors);
 
 function scissors() {
   document.getElementById("p-choice").textContent = "Scissors";
-  document.getElementById("p-img").src = "../Media/rock.png";
+  document.getElementById("p-img").src = "../Media/scissors.png";
   return cpuChoice();
 }
 
