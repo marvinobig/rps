@@ -47,6 +47,12 @@ main {
     padding-bottom: 20px;
 }
 
+img {
+    height: auto;
+    width: 50px;
+    margin: auto;
+}
+
 .score h2 {
     display: inline;
 }

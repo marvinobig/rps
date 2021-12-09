@@ -30,6 +30,7 @@ document.getElementById("rock").addEventListener("click", rock);
 
 function rock() {
   document.getElementById("p-choice").textContent = "Rock";
+  document.getElementById("p-img").src = "../Media/rock.png";
   return cpuChoice();
 }
 
@@ -38,6 +39,7 @@ document.getElementById("paper").addEventListener("click", paper);
 
 function paper() {
   document.getElementById("p-choice").textContent = "Paper";
+  document.getElementById("p-img").src = "../Media/rock.png";
   return cpuChoice();
 }
 
@@ -46,6 +48,7 @@ document.getElementById("scissors").addEventListener("click", scissors);
 
 function scissors() {
   document.getElementById("p-choice").textContent = "Scissors";
+  document.getElementById("p-img").src = "../Media/rock.png";
   return cpuChoice();
 }
 
@@ -55,6 +58,14 @@ function cpuChoice() {
   const CHOICES = ["Rock", "Paper", "Scissors"];
   let cMove = CHOICES[Math.floor(Math.random() * CHOICES.length)];
   document.getElementById("c-choice").textContent = cMove;
+
+  if (cMove === "Rock") {
+      document.getElementById("c-img").src = "../Media/rock.png";
+  }else if (cMove === "Paper") {
+      document.getElementById("c-img").src = "../Media/paper.png";
+  }else if (cMove === "Scissors") {
+      document.getElementById("c-img").src = "../Media/scissors.png";
+  };
 
   let playerChoice = document.getElementById("p-choice").textContent;
   let pScore = document.getElementById("p-score").textContent;
