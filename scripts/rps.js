@@ -30,7 +30,10 @@ document.getElementById("rock").addEventListener("click", rock);
 
 function rock() {
   document.getElementById("p-choice").textContent = "Rock";
+
   document.getElementById("p-img").src = "../Media/rock.png";
+  document.getElementById("p-img").alt = "picture of rock";
+
   return cpuChoice();
 }
 
@@ -39,7 +42,10 @@ document.getElementById("paper").addEventListener("click", paper);
 
 function paper() {
   document.getElementById("p-choice").textContent = "Paper";
+
   document.getElementById("p-img").src = "../Media/paper.png";
+  document.getElementById("p-img").alt = "picture of paper airplane";
+
   return cpuChoice();
 }
 
@@ -48,7 +54,10 @@ document.getElementById("scissors").addEventListener("click", scissors);
 
 function scissors() {
   document.getElementById("p-choice").textContent = "Scissors";
+
   document.getElementById("p-img").src = "../Media/scissors.png";
+  document.getElementById("p-img").alt = "picture of scissors";
+
   return cpuChoice();
 }
 
@@ -61,10 +70,13 @@ function cpuChoice() {
 
   if (cMove === "Rock") {
       document.getElementById("c-img").src = "../Media/rock.png";
+      document.getElementById("c-img").alt = "picture of rock";
   }else if (cMove === "Paper") {
       document.getElementById("c-img").src = "../Media/paper.png";
+      document.getElementById("c-img").alt = "picture of paper airplane";
   }else if (cMove === "Scissors") {
       document.getElementById("c-img").src = "../Media/scissors.png";
+      document.getElementById("c-img").alt = "picture of scissors";
   };
 
   let playerChoice = document.getElementById("p-choice").textContent;
@@ -97,8 +109,11 @@ function reset() {
 
     document.getElementById("p-choice").textContent = "";
     document.getElementById("c-choice").textContent = "";
+
     document.getElementById("p-img").src = "";
+    document.getElementById("p-img").alt = "";
     document.getElementById("c-img").src = "";
+    document.getElementById("c-img").alt = "";
 
     document.getElementById("p-name").textContent = "Human";
 
