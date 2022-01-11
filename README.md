@@ -11,6 +11,4 @@ First project in mainly JavaScript to show off my newly aquired js skills.
 * Firefox Dev Tools
 * Chrome Dev Tools
 
-## Disclaimer:
-This project idea is taken from "The Odin Project" but I've made it my own by incorporating HTML & CSS as the original project only used JavaScript and it was meant to be played in the console.
-
+[Live View](https://marvinobig.github.io/projects/odin-rock-paper-scissors/index.html)
