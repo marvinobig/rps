@@ -10,3 +10,5 @@ First project in mainly JavaScript to show off my newly aquired js skills.
 * Visual Studio Code
 * Firefox Dev Tools
 * Chrome Dev Tools
+
+## Archived
