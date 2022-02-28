@@ -11,4 +11,4 @@ First project in mainly JavaScript to show off my newly aquired js skills.
 * Firefox Dev Tools
 * Chrome Dev Tools
 
-## Archived
+## Private
