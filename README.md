@@ -1,5 +1,5 @@
 # Odin-Rock_Paper_Scissors
-First project in mainly JavaScript to show off my newly aquired js skills.
+Rock, Paper, Scissors Game Built Using HTML, CSS & JavaScript
 
 ## Languages used:
 * JavaScript
@@ -10,5 +10,3 @@ First project in mainly JavaScript to show off my newly aquired js skills.
 * Visual Studio Code
 * Firefox Dev Tools
 * Chrome Dev Tools
-
-## Private
