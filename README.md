@@ -1,4 +1,4 @@
-# Odin-Rock_Paper_Scissors
+# Rock, Paper, Scissors Game
 Rock, Paper, Scissors Game Built Using HTML, CSS & JavaScript
 
 ## Languages used:
